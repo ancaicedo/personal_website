@@ -1,0 +1,17 @@
+"use client"
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+const navLink = ({link}) => {
+    const pathName = usePathname();
+    console.log(pathName);
+
+    return(
+    <Link className={'rounded p1 ${pathName === link.url ? "bg-black text-white" : ""}'} href={link.url}>
+        {link.title}
+    </Link>
+    );
+};
+
+export default navLink
