@@ -8,17 +8,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'breathe-mid': 'breathe_mid 10s ease-in-out infinite',
-        'breathe-lg': 'breathe_lg 8s ease-in-out infinite',
+        'breathe': 'breathe 10s ease-in-out infinite',
       },
       keyframes: {
-        breathe_mid: {
+        breathe: {
           '0%, 100%': { transform: 'scale(1.0)' },
-          '50%': { transform: 'scale(1.20)' },
-        },
-        breathe_lg: {
-          '0%, 100%': { transform: 'scale(1.8)' },
-          '50%': { transform: 'scale(2.0)' },
+          '50%': { transform: 'scale(1.05)' },
         },
       },
       backgroundImage: {

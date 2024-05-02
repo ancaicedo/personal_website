@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import NavLink from "./navLink"
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const links = [
   {url: "/", title: "Home"},
@@ -44,7 +44,7 @@ const Navbar = () => {
     opened: {
       x: 0,
       transition: {
-        delayChildren: 0.4,
+        when: "beforeChildren",
         staggerChildren: 0.15,
       },
     },
