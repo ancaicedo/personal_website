@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const links = [
   {url: "/", title: "Home"},
   {url: "/about", title: "About"},
-  {url: "/portfolio", title: "Portfolio"},
+  {url: "/projects", title: "Projects"},
   {url: "/contact", title: "Contact"},
 ];
 
@@ -87,12 +87,12 @@ const Navbar = () => {
           <Image src="/images/linkedin.png" alt="linkedin account" width={30} height={30} />
         </Link>
         <Link href="https://github.com/ancaicedo">
-          <Image src="/images/github-white.png" alt="GitHub account" width={30} height={30} />
+          <Image src="/images/github.png" alt="GitHub account" width={30} height={30} />
         </Link>
         <Link href="https://wa.me/+18254885719">
           <Image src="/images/whatsapp.png" alt="whatsapp number" width={30} height={30} />
         </Link>
-        <Link href="https://www.instagram.com/andres201caicedo/">
+        <Link href="https://www.instagram.com/somosdos0507/">
           <Image src="/images/instagram.png" alt="instagram account" width={30} height={30} />
         </Link>
       </div>
