@@ -1,15 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
+import autosize from 'autosize';
+import GreetingAnimation from "@/components/greetingAnimation";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const text = "Say Hello";
-
+  const randomDelay = () => Math.random() * 2 + 8;
   const form = useRef();
+  const textareaRef = useRef();
 
+  useEffect(() => {
+    // Apply autosize to the textarea
+    autosize(textareaRef.current);
+  }, []);
+  
   const sendEmail = (e) => {
     e.preventDefault();
     setError(false);
@@ -42,56 +49,79 @@ const ContactPage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl text-[#9cb9ec] font-Ubuntu">
-          <div>
-            {text.split("").map((letter, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  delay: index * 0.1,
-                }}
-              >
-                {letter}
-              </motion.span>
-            ))}
-            😊
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col justify-evenly gap-y-20s overflow-hidden">
+          <div className="flex justify-center lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="flex justify-center lg:justify-end" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="flex justify-center lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
+          </div>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+            <GreetingAnimation delay={randomDelay()}/>
           </div>
         </div>
         {/* FORM CONTAINER */}
         <form
-          onSubmit={sendEmail}
-          ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-[#9cb9ec] text-opacity-90 font-Ubuntu rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+            onSubmit={sendEmail}
+            ref={form}
+            className="h-1/2 lg:h-full lg:w-1/2 text-opacity-90 text-lg flex flex-col space-y-2 w-fit mx-auto justify-center"
         >
-          <span>Hi Andres,</span>
-          <textarea
-            rows={1}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-            name="user_message"
-          />
-          <span>My mail address is:</span>
-          <input
-            name="user_email"
-            type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
-          />
-          <span>Regards</span>
-          <button className="bg-emerald-50 rounded font-semibold text-gray-600 p-4">
-            Send
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 justify-center">
+            <input placeholder="Name" className="contact-input placeholder:text-gray-500 md:w-1/2" name="name"
+                   type="text"/>
+            <input placeholder="Email" className="contact-input placeholder:text-gray-500 md:w-1/2" name="email"
+                   type="email"/>
+          </div>
+          <input placeholder="Subject" className="flex justify-center contact-input placeholder:text-gray-500"
+                 name="subject" type="text"/>
+          <textarea 
+              placeholder="Message" 
+              className=" contact-input placeholder:text-gray-500 lg:h-72 h-64 overflow-auto max-h-[900px] z-10"
+              name="message"
+              ref={textareaRef}
+          ></textarea>
+          <button
+              className="p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Submit
           </button>
           {success && (
-            <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
-            </span>
+              <span className="text-green-600 font-semibold">
+                Your message has been sent successfully!
+              </span>
           )}
           {error && (
-            <span className="text-red-600 font-semibold">
-              Something went wrong!
-            </span>
+              <span className="text-red-600 font-semibold">
+                Something went wrong!
+              </span>
           )}
         </form>
       </div>

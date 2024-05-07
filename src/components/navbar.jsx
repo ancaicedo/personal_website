@@ -49,7 +49,7 @@ const Navbar = () => {
       },
     },
     closed: {
-      x: "50vw",
+      x: "40vw",
     }
   }
   const itemVariants = {
@@ -74,7 +74,7 @@ const Navbar = () => {
       </div>
 
       {/* Logo */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center font-Ubuntu">
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link href="/" className="text-sm bg-[#222f42] rounded-md  p-1 font-semibold flex items-center justify-center">  
           <span className="text-[#9cb9ec] text-opacity-80  mr-1">Hello</span>
           <span className="w-12 h-8 rounded bg-[#9cb9ec] text-[#0f172a] flex items-center justify-center">World!</span>

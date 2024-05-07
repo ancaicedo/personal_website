@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('/fonts/Ubuntu-Regular.ttf');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+
+@layer components {
+    .contact-input{
+        @apply outline-none bg-gray-900 rounded-sm border-b text-gray-500 px-6 py-4 border-b-white
+        placeholder-[#9cb9ec] transition-all focus:border-green-500/40 focus:text-[#9cb9ec] hover:border-green-500/40 ; 
+    }
 }

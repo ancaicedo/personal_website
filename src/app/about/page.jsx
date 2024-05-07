@@ -26,7 +26,7 @@ const AboutPage = () => {
       {/* TEXT CONTAINER */}
       <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
         {/* BIOGRAPHY SECTION */}
-        <div className="flex flex-col gap-12 justify-center text-[#9cb9ec] text-opacity-90 font-Ubuntu">
+        <div className="flex flex-col gap-12 justify-center text-[#9cb9ec] text-opacity-90">
           {/* Biography Image */}
           <Image
             src="/images/me.png"
@@ -90,7 +90,7 @@ const AboutPage = () => {
         </div>
 
         {/* SKILLS SECTION */}
-        <div className="flex flex-col gap-12 justify-center text-[#9cb9ec] text-opacity-90 font-Ubuntu" ref={skillRef}>
+        <div className="flex flex-col gap-12 justify-center text-[#9cb9ec] text-opacity-90" ref={skillRef}>
           <motion.h1 
             initial={{x:"-300-px"}} 
             animate={isSkillRefInView ? {x:0} : {}} 
@@ -146,13 +146,13 @@ const AboutPage = () => {
         </div>
 
         {/* EXPERIENCE SECTION */}
-        <div className="flex flex-col gap-12 justify-center pb-48 text-[#9cb9ec] text-opacity-90 font-Ubuntu" ref={experienceRef}>
+        <div className="flex flex-col gap-12 justify-center pb-48 text-[#9cb9ec] text-opacity-90" ref={experienceRef}>
           <motion.h1 
               className="font-bold text-2xl"
                 initial={{x:"-300-px"}}
                 animate={isExperienceRefInView ? {x:0} : {}}
                 transition={{delay:0.2}}
-          >EXPERIENCE</motion.h1>
+          >WORK HISTORY</motion.h1>
           {/* Experience List */}
           <motion.div
               initial={{x:"-300-px"}}
@@ -215,6 +215,45 @@ const AboutPage = () => {
                     {/* Circle */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-emerald-300 bg-[#9cb9ec] -left-2"></div>  
                   </div>
+              </div>
+              {/* Right */}
+              <div className="w-1/3"></div>
+            </div>
+            <div className="flex justify-between h-48">
+              {/* Left */}
+              <div className="w-1/3"></div>
+              {/* Center */}
+              <div className="w-1/6 ">
+                {/* Line */}
+                <div className="w-1 h-full bg-[#9cb9ec] rounded relative">
+                  {/* Circle */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-emerald-400 bg-[#9cb9ec] -left-2"></div>
+                </div>
+              </div>
+              {/* Right */}
+              <div className="w-1/3">
+                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-tr-lg text-[#222f42] text-center">Title of Job</div>
+                <div className="p-3 text-sm italic">Description</div>
+                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
+                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+              </div>
+            </div>
+            {/* Item */}
+            <div className="flex justify-between h-48">
+              {/* Left */}
+              <div className="w-1/3">
+                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">Title of Job</div>
+                <div className="p-3 text-sm italic">Description</div>
+                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
+                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+              </div>
+              {/* Center */}
+              <div className="w-1/6 ">
+                {/* Line */}
+                <div className="w-1 h-full bg-[#9cb9ec] rounded relative">
+                  {/* Circle */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-emerald-300 bg-[#9cb9ec] -left-2"></div>
+                </div>
               </div>
               {/* Right */}
               <div className="w-1/3"></div>

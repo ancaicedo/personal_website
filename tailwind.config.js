@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+        colors: {
+            'custom-blue': '#9cb9ec',
+        },
       animation: {
         'breathe': 'breathe 10s ease-in-out infinite',
         'gradient-x':'gradient-x 15s ease infinite',
