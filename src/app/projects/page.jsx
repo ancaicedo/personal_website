@@ -9,7 +9,9 @@ const items = [
       id: 1,
       color: "from-[#1f2b3b] to-[#121c33]",
       title: "React Commerce",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate,
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
       img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
@@ -17,7 +19,9 @@ const items = [
       id: 2,
       color: "from-[#1f2b3b] to-[#121c33]",
       title: "Next.js Medium Blog",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
       img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
@@ -25,7 +29,9 @@ const items = [
       id: 3,
       color: "from-[#1f2b3b] to-[#121c33]",
       title: "Vanilla Book App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
@@ -33,16 +39,59 @@ const items = [
       id: 4,
       color: "from-[#1f2b3b] to-[#121c33]",
       title: "Spotify Music App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
       img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "https://lama.dev",
     },
+    {
+      id: 5,
+      color: "from-[#1f2b3b] to-[#121c33]",
+      title: "React Commerce",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
+      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      link: "https://lama.dev",
+    },
+    {
+      id: 6,
+      color: "from-[#1f2b3b] to-[#121c33]",
+      title: "Next.js Medium Blog",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
+      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      link: "https://lama.dev",
+    },
+    {
+      id: 7,
+      color: "from-[#1f2b3b] to-[#121c33]",
+      title: "Vanilla Book App",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
+      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      link: "https://lama.dev",
+    },
+    {
+      id: 8,
+      color: "from-[#1f2b3b] to-[#121c33]",
+      title: "Spotify Music App",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, 
+            quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.`,
+      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      link: "https://lama.dev",
+    }
   ];
 
 const ProjectsPage = () => {
     const ref = useRef();
     const {scrollYProgress} = useScroll({target:ref});
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+    // TODO: Scroll depends on a hardcoded value, need to standardize this
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-89%"]);
     return (
     <motion.div 
         className="h-full" 
@@ -81,7 +130,7 @@ const ProjectsPage = () => {
                     <div
                         className={`h-screen w-screen flex items-center justify-center bg-gradient-to-b ${item.color}`}
                         key={item.id}>
-                        <div className="flex flex-col gap-8 text-[#9cb9ec]">
+                        <div className="flex flex-col gap-6 text-[#9cb9ec]">
                             <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                                 {item.title}
                             </h1>
@@ -107,7 +156,7 @@ const ProjectsPage = () => {
         
         {/* Contact Section */}
         <div
-            className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center text-[#9cb9ec] text-opacity-90 bg-gradient-to-b from-[#121c33] to-[#1f2b3b]">
+            className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center text-[#9cb9ec] text-opacity-90 bg-gradient-to-b from-[#121c33] to-[#1f2b3b] overflow-hidden">
             <h1 className="text-8xl">Any questions?</h1>
             <div className="relative">
                 <motion.svg

@@ -3,6 +3,7 @@ import {motion, useInView, useScroll} from "framer-motion";
 import Brain from "../../components/brain";
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutPage = () => {
 
@@ -24,7 +25,7 @@ const AboutPage = () => {
     > 
     <div className="h-full lg:flex overflow-auto" ref={containerRef}>
       {/* TEXT CONTAINER */}
-      <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+      <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-30 flex flex-col gap-24 md:gap-32 lg:gap-40 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
         {/* BIOGRAPHY SECTION */}
         <div className="flex flex-col gap-12 justify-center text-[#9cb9ec] text-opacity-90">
           {/* Biography Image */}
@@ -41,27 +42,27 @@ const AboutPage = () => {
             <span>-Nelson Mandela</span>
           </div>
           {/* Biography */}
-          <h1 className="font-bold text-2xl">BIOGRAPHY *****NEED TO CHANGE THIS I GOT THIS FROM CHATGPT*****</h1>
+          <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
           <p className="text-lg">
-            A Software Engineer with a specialized focus in application development,
-            system enhancements, and process optimization. Based in Calgary, Alberta,
-            he holds a Bachelor’s degree in Software Engineering from the University of Calgary,
-            where he also pursued a minor in Mechanical Engineering and completed a Bachelor of Science
-            in Biomechanics.
+            I embarked on my professional journey by pursuing a degree in biomechanics, which I completed in 2014. During my final year, I had the privilege of conducting my clinical practicum at Mosaic Health Care Network, gaining invaluable hands-on experience.
           </p>
           <p className="text-lg">
-            Since beginning his career in technology, Andres has held positions that span software development, 
-            system analysis, and research. Currently, he is a Software Developer Engineer in Test at Unity, where he has significantly 
-            contributed to the development of automation frameworks that enhance test efficiency and system reliability. His work has 
-            led to notable improvements in operational processes, earning him a reputation for effectiveness and innovation.
+            I joined the Human Performance Laboratories (HPL) as a Biomechanics research assistant in late 2013, where I contributed for three years until 2016. Concurrently, I also served as a research assistant for the Sports Injury Clinic from 2013 to 2016.
           </p>
           <p className="text-lg">
-            Beyond his professional endeavors, Andres is actively involved in the competitive programming community and volunteers 
-            with Project 90 UCalgary, contributing to projects that aid children with disabilities. His commitment to applying his 
-            technical skills for communal benefit is evident from his participation in both local initiatives and broader research efforts, 
-            including publications in the field of biomechanics. With a solid foundation in both the theoretical and practical aspects 
-            of software engineering, coupled with a profound commitment to using technology to solve real-world problems, Andres continues 
-            to impact the tech industry through his dedication and skill.
+            Despite my dedication to research, I felt a calling for a different path. With my partner by my side, we ventured abroad and taught English from 2016 to 2017, a transformative experience that broadened my horizons.
+          </p>
+          <p className="text-lg">
+            Upon returning and with encouragement from my family, I decided to pivot towards a Software Engineering career, a field that had always intrigued me. I began my transition by working as a specialized support technician at the University of Calgary's IT department, where I immersed myself in the world of technology while pursuing my full-time studies in software engineering.
+          </p>
+          <p className="text-lg">
+            My tenure at the University's IT department spanned from 2019 to 2022, during which I honed my skills and prepared for the next phase of my career. In 2022, I seized the opportunity to intern at Unity Technologies, a decision that solidified my passion for software development.
+          </p>
+          <p className="text-lg">
+            Following my internship, I was thrilled to join Unity full time as a Software Development Engineer in Test (SDET) in the Industry & Digital Twin department. I am dedicated to learning, always eager to collaborate, and known for my strong work ethic.
+          </p>
+          <p className="text-lg">
+            Outside of work, I enjoy exploring new restaurants, spending time with my cats, and enjoying shows with my wife. I also have a deep appreciation for sports, particularly soccer, hockey, and basketball, both as a player and a spectator.
           </p>
           {/* Signature */ }
           <div className="self-end">
@@ -126,6 +127,9 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Github Actions</div>
               <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Microsoft Azure</div>          
               <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Framer Motion</div>
+              <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Microsoft Azure</div>
+              <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">MATLAB</div>
+              <div className="rounded p-2 text-sm ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Active Directory</div>
             </motion.div>
           {/* Skill Scroll SVG */}
           <div>
@@ -153,6 +157,7 @@ const AboutPage = () => {
                 animate={isExperienceRefInView ? {x:0} : {}}
                 transition={{delay:0.2}}
           >WORK HISTORY</motion.h1>
+          {/* TODO: look at the padding its not consistent on big screens */}
           {/* Experience List */}
           <motion.div
               initial={{x:"-300-px"}}
@@ -163,10 +168,16 @@ const AboutPage = () => {
             <div className="flex justify-between h-48">
               {/* Left */}
               <div className="w-1/3">
-                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">Title of Job</div>
-                <div className="p-3 text-sm italic">Description</div>
-                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
-                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+                <div className="bg-[#9cb9ec] p-2 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">Software Developer Engineer</div>
+                <div className="p-2 text-sm italic">
+                  Industry and Digital Twins
+                </div>
+                <div className="p-2 text-sm font-semibold">Mar 2022 - Current</div>
+                <Link className="rel=noopener noreferrer" target="_blank" href="https://unity.com/our-company">
+                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                  Unity Technologies
+                  </button>
+                </Link>
               </div>
               {/* Center */}
               <div className="w-1/6 ">
@@ -193,20 +204,28 @@ const AboutPage = () => {
               </div>
               {/* Right */}
               <div className="w-1/3">
-              <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-tr-lg text-[#222f42] text-center">Title of Job</div>
-                <div className="p-3 text-sm italic">Description</div>
-                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
-                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+              <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-tr-lg text-[#222f42] text-center">Computer Support Technician</div>
+                <div className="p-3 text-sm italic">Arts IT</div>
+                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Jul 2019 - Apr 2022</div>
+                <Link className="rel=noopener noreferrer" target="_blank" href="https://www.ucalgary.ca/">
+                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                    University of Calgary
+                  </button>
+                </Link>
               </div>
             </div>
             {/* Item */}
             <div className="flex justify-between h-48">
               {/* Left */}
               <div className="w-1/3">
-                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">Title of Job</div>
-                <div className="p-3 text-sm italic">Description</div>
-                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
-                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">English Teacher</div>
+                <div className="p-3 text-sm italic">Oxford Seminars</div>
+                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Sep 2016 - Oct - 2017</div>
+                <Link className="rel=noopener noreferrer" target="_blank" href="https://shaneschools.com/">
+                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                  Shane School - China
+                  </button>
+                </Link>
               </div>
               {/* Center */}
               <div className="w-1/6 ">
@@ -219,6 +238,7 @@ const AboutPage = () => {
               {/* Right */}
               <div className="w-1/3"></div>
             </div>
+            {/* Item */}
             <div className="flex justify-between h-48">
               {/* Left */}
               <div className="w-1/3"></div>
@@ -232,33 +252,17 @@ const AboutPage = () => {
               </div>
               {/* Right */}
               <div className="w-1/3">
-                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-tr-lg text-[#222f42] text-center">Title of Job</div>
-                <div className="p-3 text-sm italic">Description</div>
-                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
-                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
+                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-tr-lg text-[#222f42] text-center">Biomechanics Research assistant</div>
+                <div className="p-3 text-sm italic">Sport and Prevention Injury Clinic</div>
+                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Jan 2013 - Sep 2016</div>
+                <Link className="rel=noopener noreferrer" target="_blank" href="https://kinesiology.ucalgary.ca/research/labs-and-centres/human-performance-lab">
+                  <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                    Human Performance Lab
+                  </button>
+                </Link>
               </div>
             </div>
-            {/* Item */}
-            <div className="flex justify-between h-48">
-              {/* Left */}
-              <div className="w-1/3">
-                <div className="bg-[#9cb9ec] p-3 font-semibold rounded-b-lg rounded-s-lg text-[#222f42] text-center">Title of Job</div>
-                <div className="p-3 text-sm italic">Description</div>
-                <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Date</div>
-                <div className="p-1 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit">Company Name</div>
-              </div>
-              {/* Center */}
-              <div className="w-1/6 ">
-                {/* Line */}
-                <div className="w-1 h-full bg-[#9cb9ec] rounded relative">
-                  {/* Circle */}
-                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-emerald-300 bg-[#9cb9ec] -left-2"></div>
-                </div>
-              </div>
-              {/* Right */}
-              <div className="w-1/3"></div>
-            </div>
-            
+
           </motion.div>
         </div>
       </div>
