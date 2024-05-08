@@ -42,7 +42,7 @@ const items = [
 const ProjectsPage = () => {
     const ref = useRef();
     const {scrollYProgress} = useScroll({target:ref});
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
     return (
     <motion.div 
         className="h-full" 
@@ -50,10 +50,11 @@ const ProjectsPage = () => {
         animate={{y:"0%"}} 
         transition={{duration:1}}
     >
+        {/* Title Section */} 
         <div className="h-[600vh] relative" ref={ref}>
             <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-8xl text-center text-[#9cb9ec] text-opacity-90 relative">
                 <div className="flex-grow flex flex-col justify-center">
-                    Projects Involvement
+                    Project Involvement
                 </div>
                 <div className="absolute bottom-0 mb-10">
                     <motion.svg
@@ -71,38 +72,40 @@ const ProjectsPage = () => {
                     </motion.svg>
                 </div>
             </div>
-
+            
+            {/* Projects Section */}
             <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
                 <motion.div style={{x}} className="flex">
-                    <div
-                        className="h-screen w-screen flex items-center justify-center bg-gradient-to-b from-[#1f2b3b] to-[#121c33]"/>
+                    <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-b from-[#1f2b3b] to-[#121c33]"/>
                     {items.map((item) => (
-                        <div
-                            className={`h-screen w-screen flex items-center justify-center bg-gradient-to-b ${item.color}`}
-                            key={item.id}>
-                            <div className="flex flex-col gap-8 text-white">
-                                <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
-                                    {item.title}
-                                </h1>
-                                <div
-                                    className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                                    <Image src={item.img} alt="" fill/>
-                                </div>
-                                <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                                    {item.desc}
-                                </p>
-                                <Link href={item.link} className="flex justify-end">
-                                    <button
-                                        className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See
-                                        Demo
-                                    </button>
-                                </Link>
+                    <div
+                        className={`h-screen w-screen flex items-center justify-center bg-gradient-to-b ${item.color}`}
+                        key={item.id}>
+                        <div className="flex flex-col gap-8 text-white">
+                            <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                                {item.title}
+                            </h1>
+                            <div
+                                className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                                <Image src={item.img} alt="project image" fill/>
                             </div>
+                            <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                                {item.desc}
+                            </p>
+                            <Link href={item.link} className="flex justify-end">
+                                <button
+                                    className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See
+                                    Demo
+                                </button>
+                            </Link>
                         </div>
+                    </div>
                     ))}
                 </motion.div>
             </div>
         </div>
+        
+        {/* Contact Section */}
         <div
             className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center text-[#9cb9ec] text-opacity-90 bg-gradient-to-b from-[#121c33] to-[#1f2b3b]">
             <h1 className="text-8xl">Any questions?</h1>
@@ -130,7 +133,7 @@ const ProjectsPage = () => {
                     href="/contact"
                     className="w-16 h-16 md:w-28 md:h-28 absolute ring-1 ring-black top-0 left-0 right-0 bottom-0 m-auto bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] rounded-full flex items-center justify-center"
                 >
-                Let's Talk!
+                Let's talk!
                 </Link>
             </div>
         </div>

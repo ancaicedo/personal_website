@@ -33,8 +33,18 @@ const Homepage = () => {
 
         {/* Buttons */}
         <div className="w-full flex gap-4 p-8 justify-center">
-          <button className="p-4 rounded-lg ring-1 ring-black bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec]">View My Work</button>
-          <button className="p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Contact me!</button>
+          <button 
+            className="p-4 rounded-lg ring-1 ring-black bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec]" 
+            onClick={() => window.location.href = '/projects'}
+          >
+            View My Work
+          </button>
+          <button 
+            className="p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]" 
+            onClick={() => window.location.href = '/contact'}
+          >
+            Contact me!
+          </button>
         </div>
       </div>
     </div>
