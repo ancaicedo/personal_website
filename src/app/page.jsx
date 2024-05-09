@@ -13,7 +13,7 @@ const Homepage = () => {
       </div>
 
       {/* Content Container */}
-      <div className="h-1/2 flex flex-col gap-8 justify-center">
+      <div className="h-2/3 flex flex-col gap-8 justify-center">
         {/* Title */}
         <h1 className="text-4xl text-center font-semibold md:text-6xl 
           bg-gradient-to-r from-sky-500 via-emerald-500 to-indigo-500 animate-gradient-x inline-block 
