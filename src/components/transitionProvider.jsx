@@ -4,11 +4,16 @@ import { AnimatePresence, } from "framer-motion"
 import Navbar from "./navbar"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const TransitionProvider = ({children}) => {
     const pathName = usePathname()
     const [isVisible, setIsVisible] = useState(true);
+    
+    useEffect(() => {
+        setIsVisible(true);
+    }
+    , [pathName])
     
   return (
     <AnimatePresence mode="wait">
@@ -19,6 +24,7 @@ const TransitionProvider = ({children}) => {
             exit={{height: "140vh"}}
             transition={{duration: 0.3, ease: "easeInOut"}}
             />
+
             {isVisible && (
                 <motion.div
                     className="fixed m-auto top-0 bottom-0 left-0 right-0 text-[#9cb9ec] text-8xl cursor-default z-50 w-fit h-fit"
@@ -26,10 +32,10 @@ const TransitionProvider = ({children}) => {
                     animate={{ opacity: 0 }}
                     exit={{ opacity: 0 }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.8,
                         ease: "easeOut",
-                        onComplete: () => setIsVisible(false)
                     }}
+                    onAnimationComplete={() => setIsVisible(false)}
                 >
                     {pathName === "/" ? "Home" : pathName.substring(1).charAt(0).toUpperCase() + pathName.substring(2)}
                 </motion.div>
