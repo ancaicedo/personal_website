@@ -53,7 +53,7 @@ const projects = [
             to the build pipeline. Additionally, I significantly contributed to the setup and maintenance of 
             the CI/CD pipeline. Our work on this project at Vancouver International Airport (YVR) showcases the 
             power of digital twin technology in revolutionizing airport operations.`,
-    img: "/images/Telus.png",
+    img: "/images/yvr.png",
     link: "https://blog.unity.com/industry/how-digital-twins-are-transforming-large-scale-airports",
     },
     {
