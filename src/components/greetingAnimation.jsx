@@ -111,7 +111,6 @@ const GreetingAnimation = ({ delay = 0 }) => {
     }
 
     const [greeting, setGreeting] = useState("Hello");
-    const [position,] = useState(0);
     const intervalRef = useRef();
     
     useEffect(() => {
@@ -132,13 +131,11 @@ const GreetingAnimation = ({ delay = 0 }) => {
     return (
         <div
             className="h-1/2 lg:h-full lg:w-1/2 text-4xl text-[#9cb9ec] relative my-custom-class"
-            style={{ textAlign: 'center' }}
         >
             <div
                 className=""
                 style={{
                     position: 'absolute',
-                    top: `${position}%`,
                 }}
             >
                 <motion.div

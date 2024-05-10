@@ -59,7 +59,7 @@ const ContactPage = () => {
           <div className="flex justify-center lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
             <GreetingAnimation delay={randomDelay()}/>
           </div>
-          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
+          <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
             <GreetingAnimation delay={randomDelay()}/>
           </div>
           <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
