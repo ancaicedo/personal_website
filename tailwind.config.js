@@ -62,6 +62,13 @@ module.exports = {
       }
     },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+      extend: {
+          opacity: ['active', 'focus'],
+      },
+  },
+  plugins: [
+      require('tailwind-scrollbar')(
+          { nocompatible: true, preferredStrategy: 'pseudoelements' }),
+  ],
 };

@@ -8,13 +8,13 @@ const projects = [
         id: 1, 
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Queso Automation Framework",
-        desc: `I collaborated on the development of the Queso Automation Framework, 
-                a Full Stack Automation framework in C# for the Unity Engine. 
+        desc: `Queso is an automation framework we developed internally for Unity Applications. 
+                I collaborated on the development of Queso as a Full Stack application in C# and using MySQL and PosgreSQL for backend. 
                 This framework set a new standard for our Quality Engineering team and 
                 has become a key automation tool for all Unity projects. I successfully 
                 implemented this framework in multiple projects across various platforms.`,
         img: "/images/automation.jpg", 
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Unity", "C#", "Java", "PostgreSQL", "Postman", "Confluence"],
         link: "https://unity.com/how-to/automated-tests-unity-test-framework",
     },
     {
@@ -34,7 +34,7 @@ const projects = [
         id: 3,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "VRChat Android Port",
-        desc: `I was part of the team that collaborated with the VRChat team to port the application to mobile platforms. 
+        desc: `I was in team that collaborated with the VRChat developers to port the application to mobile platforms. 
                 My role focused on testing and automation, contributing to the successful adaptation of the application for mobile use. 
                 I played a key role in ensuring its functionality and performance on mobile devices were up to standard.`,
         img: "/images/vrchat.png",
@@ -45,7 +45,7 @@ const projects = [
         id: 4,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "AppleTV Prehistoric Planet Immersive",
-        desc: `I was involved in a confidential film production project for Apple TV+ show "Prehistoric Planet," 
+        desc: `A confidential film production project for Apple TV+ show "Prehistoric Planet," 
                 aimed at creating a VR experience for the unreleased Apple Vision Pro. As an automation engineer, I developed 
                 tools in Python to track the progress of the render farm and analyze faults in the build pipeline. These tools 
                 included a log parser and statistic extractor for each node, as well as graphing tools for monitoring memory usage, 
@@ -58,7 +58,7 @@ const projects = [
         id: 5,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Maloka VR",
-        desc: `I was part of the team working on the Maloka VR application, where I focused on testing and automation. 
+        desc: `Maloka is a VR application that transports the user into an immersive world for exploration, reflection, healing, and play, where I focused on testing and automation. 
                 Unlike previous projects, I was also involved in the CI/CD pipeline, ensuring smooth deployment and integration processes. 
                 For automated testing, I used GameDriver and Cypress, contributing to the application's quality and efficiency.`,
         img: "/images/maloka.jpg",
@@ -69,7 +69,7 @@ const projects = [
         id: 6,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Adaptive Bandwidth Throttling for Telus",
-        desc: `I served as the technical lead for the Adaptive Bandwidth Throttling project with TELUS Communications. 
+        desc: `As the technical lead for the Adaptive Bandwidth Throttling project with TELUS Communications. 
             My role involved overseeing project infrastructure, developing design patterns, and implementing new features. 
             Our collaboration resulted in a successful solution that significantly improved user experience and garnered 
             recognition from TELUS executives and coverage in a University of Calgary publication.`,
@@ -81,7 +81,7 @@ const projects = [
         id: 7,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Research on Force Depression in Muscle Fiber Types",
-        desc: `I was part of a research team studying force depression in different muscle fibers. 
+        desc: `Studying force depression in different muscle fibers. 
             We used rabbit muscles to measure force changes during active fiber shortening. 
             By analyzing the data and coding tools for extraction, we found that Type II fibers 
             have greater force depression than Type I fibers when shortening at a certain speed. 
@@ -93,17 +93,15 @@ const projects = [
     },
 ];
 
-
-
 const ProjectsPage = () => {
     return (
         <motion.div
             initial={{y:"-200vh"}}
             animate={{y:"0%"}}
             transition={{duration:1}}
-            className="flex relative h-auto flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center overflow-y-hidden overscroll-x-auto"
+            className="flex relative h-auto flex-col md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
         >
-            <div className={"h-auto flex space-x-5 overflow-x-scroll p-10 snap-x projects-page"}>
+            <div className={"h-auto w-full flex space-x-10 overflow-x-scroll p-1 snap-x snap-mandatory projects-page scrollbar scrollbar-track-[#0f172a] scrollbar-w-3 scrollbar-thumb-[#9cb9ec] scrollbar-thumb-rounded-full scrollbar-track-rounded-full"}>
                 {projects.map((project) => (   
                     <ExperienceCard project={project} key={project.id}/>
                 ))}

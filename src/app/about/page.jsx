@@ -23,7 +23,7 @@ const AboutPage = () => {
       animate={{y:"0%"}} 
       transition={{duration:1}}
     > 
-    <div className="h-full lg:flex overflow-auto" ref={containerRef}>
+    <div className="h-full lg:flex overflow-auto scrollbar scrollbar-track-[#0f172a] scrollbar-w-3 scrollbar-thumb-[#9cb9ec] scrollbar-thumb-rounded-full scrollbar-track-rounded-full" ref={containerRef}>
       {/* TEXT CONTAINER */}
       <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-30 flex flex-col gap-24 md:gap-32 lg:gap-40 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
         {/* BIOGRAPHY SECTION */}
@@ -157,7 +157,6 @@ const AboutPage = () => {
                 animate={isExperienceRefInView ? {x:0} : {}}
                 transition={{delay:0.2}}
           >WORK HISTORY</motion.h1>
-          {/* TODO: look at the padding its not consistent on big screens */}
           {/* Experience List */}
           <motion.div
               initial={{x:"-300-px"}}
@@ -174,14 +173,14 @@ const AboutPage = () => {
                 </div>
                 <div className="p-2 text-sm font-semibold">Mar 2022 - Current</div>
                 <Link className="rel=noopener noreferrer" target="_blank" href="https://unity.com/our-company">
-                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
-                  Unity Technologies
+                  <button className="p-2 rounded bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] tex-sm font-semibold w-fit ring-1 ring-black">
+                    Unity Technologies
                   </button>
                 </Link>
               </div>
               {/* Center */}
               <div className="w-1/6 ">
-                  {/* Line */}
+                {/* Line */}
                   <div className="w-1 h-full bg-[#9cb9ec] rounded relative">
                     {/* Circle */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-emerald-300 bg-[#9cb9ec] -left-2"></div>  
@@ -208,7 +207,7 @@ const AboutPage = () => {
                 <div className="p-3 text-sm italic">Arts IT</div>
                 <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Jul 2019 - Apr 2022</div>
                 <Link className="rel=noopener noreferrer" target="_blank" href="https://www.ucalgary.ca/">
-                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                  <button className="p-2 rounded bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] tex-sm font-semibold w-fit ring-1 ring-black">
                     University of Calgary
                   </button>
                 </Link>
@@ -222,7 +221,7 @@ const AboutPage = () => {
                 <div className="p-3 text-sm italic">Oxford Seminars</div>
                 <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Sep 2016 - Oct - 2017</div>
                 <Link className="rel=noopener noreferrer" target="_blank" href="https://shaneschools.com/">
-                <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                <button className="p-2 rounded bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] tex-sm font-semibold w-fit ring-1 ring-black">
                   Shane School - China
                   </button>
                 </Link>
@@ -256,7 +255,7 @@ const AboutPage = () => {
                 <div className="p-3 text-sm italic">Sport and Prevention Injury Clinic</div>
                 <div className="p-3 text-[#9cb9ec] text-sm font-semibold">Jan 2013 - Sep 2016</div>
                 <Link className="rel=noopener noreferrer" target="_blank" href="https://kinesiology.ucalgary.ca/research/labs-and-centres/human-performance-lab">
-                  <button className="p-2 rounded bg-[#9cb9ec] text-[#222f42] tex-sm font-semibold w-fit ring-1 ring-black">
+                  <button className="p-2 rounded bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] tex-sm font-semibold w-fit ring-1 ring-black">
                     Human Performance Lab
                   </button>
                 </Link>

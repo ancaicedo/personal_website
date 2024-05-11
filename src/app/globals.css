@@ -11,5 +11,26 @@
     .projects-page {
         height: auto;
         overflow: hidden;
+    }    
+}
+
+@media (min-width: 640px) { /* For screens larger than 640px */
+    .responsive-image {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) { /* For screens larger than 1024px */
+    .responsive-image {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 1280px) { /* For screens larger than 1280px */
+    .responsive-image {
+        width: 400px;
+        height: 400px;
     }
 }
