@@ -14,7 +14,7 @@ const projects = [
                 has become a key automation tool for all Unity projects. I successfully 
                 implemented this framework in multiple projects across various platforms.`,
         img: "/images/automation.jpg", 
-        techImg: ["Unity", "C#", "Java", "PostgreSQL", "Postman", "Confluence"],
+        techImg: ["Unity", "C#", "Java", "PostgreSQL", "Docker", "Postman", "Confluence"],
         link: "https://unity.com/how-to/automated-tests-unity-test-framework",
     },
     {
@@ -27,7 +27,7 @@ const projects = [
                 the CI/CD pipeline. Our work on this project at Vancouver International Airport (YVR) showcases the 
                 power of digital twin technology in revolutionizing airport operations.`,
         img: "/images/yvr.png",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Unity","C#","Git", "Jenkins", "Docker", "Jira"],
         link: "https://blog.unity.com/industry/how-digital-twins-are-transforming-large-scale-airports",
     },
     {
