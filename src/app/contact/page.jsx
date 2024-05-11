@@ -8,6 +8,7 @@ import GreetingAnimation from "@/components/greetingAnimation";
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [formIncomplete, setFormIncomplete] = useState(false);
   const randomDelay = () => Math.random() * 2 + 8;
   const form = useRef();
   const textareaRef = useRef();
@@ -16,28 +17,54 @@ const ContactPage = () => {
     // Apply autosize to the textarea
     autosize(textareaRef.current);
   }, []);
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
     setError(false);
     setSuccess(false);
+    setFormIncomplete(false);
 
+    // Get form fields
+    const nameField = form.current.elements.name;
+    const emailField = form.current.elements.email;
+    const subjectField = form.current.elements.subject;
+    const messageField = form.current.elements.message;
+
+    // Check if form fields are empty
+    if (!nameField.value || !emailField.value || !subjectField.value || !messageField.value) {
+      // Add 'border-red-500' class to empty fields
+      if (!nameField.value) nameField.classList.add('border-red-500');
+      if (!emailField.value) emailField.classList.add('border-red-500');
+      if (!subjectField.value) subjectField.classList.add('border-red-500');
+      if (!messageField.value) messageField.classList.add('border-red-500');
+
+      setFormIncomplete(true);
+      return;
+    }
+
+    // Remove 'border-red-500' class from fields
+    nameField.classList.remove('border-red-500');
+    emailField.classList.remove('border-red-500');
+    subjectField.classList.remove('border-red-500');
+    messageField.classList.remove('border-red-500');
+
+    // Send email
     emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          form.current.reset();
-        },
-        () => {
-          setError(true);
-        }
-      );
+        .sendForm(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY
+        )
+        .then(
+            () => {
+              setSuccess(true);
+              form.current.reset();
+            },
+            () => {
+              setError(true);
+            }
+        );
   };
 
   return (
@@ -115,13 +142,18 @@ const ContactPage = () => {
           </button>
           {success && (
               <span className="text-green-600 font-semibold">
-                Your message has been sent successfully!
-              </span>
+          Your message has been sent successfully!
+        </span>
           )}
           {error && (
               <span className="text-red-600 font-semibold">
-                Something went wrong!
-              </span>
+          Something went wrong!
+        </span>
+          )}
+          {formIncomplete && (
+              <span className="text-red-600 font-semibold">
+          Please fill out all forms
+        </span>
           )}
         </form>
       </div>
