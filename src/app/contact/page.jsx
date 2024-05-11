@@ -152,7 +152,7 @@ const ContactPage = () => {
           )}
           {formIncomplete && (
               <span className="text-red-600 font-semibold">
-          Please fill out all forms
+          Please fill out all forms!
         </span>
           )}
         </form>

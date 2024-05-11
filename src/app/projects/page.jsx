@@ -21,10 +21,10 @@ const projects = [
         id: 2,
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Airport Digital Twin Solution",
-        desc: `I was a Software Developer Engineer in Test for this project. In this role, 
+        desc: `Unity repeatable solution for Airport Digital Twins.
                 I implemented the Automation framework to run Editor mode and Play mode tests and added them 
                 to the build pipeline. Additionally, I significantly contributed to the setup and maintenance of 
-                the CI/CD pipeline. Our work on this project at Vancouver International Airport (YVR) showcases the 
+                the CI/CD pipeline. Our work on this project at Vancouver International Airport (YVR) and others showcases the 
                 power of digital twin technology in revolutionizing airport operations.`,
         img: "/images/yvr.png",
         techImg: ["Unity","C#","Git", "Jenkins", "Docker", "Jira"],
@@ -35,10 +35,11 @@ const projects = [
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "VRChat Android Port",
         desc: `I was in team that collaborated with the VRChat developers to port the application to mobile platforms. 
-                My role focused on testing and automation, contributing to the successful adaptation of the application for mobile use. 
+                My role focused on testing and automation, contributing to the successful adaptation of the application for mobile use.
+                The responsibilities included adding new suites and features as well as maintaining the CI/CD pipeline. 
                 I played a key role in ensuring its functionality and performance on mobile devices were up to standard.`,
         img: "/images/vrchat.png",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Unity", "C#", "Docker", "GitHub Actions", "Jira"],
         link: "https://hello.vrchat.com/blog/mobile-alpha-now-live",
     },
     {
@@ -51,7 +52,7 @@ const projects = [
                 included a log parser and statistic extractor for each node, as well as graphing tools for monitoring memory usage, 
                 frames rendered, VRAM usage, and more. This project was a unique and exciting opportunity to blend technology and storytelling.`,
         img: "/images/apple.jpg",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Unity", "Python", "C#", "Parsec", "Houdini", "Confluence", "Perforce" , "Jira"],
         link: "https://www.apple.com/tv-pr/news/2024/01/apple-tv-unveils-groundbreaking-immersive-originals-from-todays-biggest-storytellers-set-to-debut-on-apple-vision-pro/",
     },
     {
@@ -62,7 +63,7 @@ const projects = [
                 Unlike previous projects, I was also involved in the CI/CD pipeline, ensuring smooth deployment and integration processes. 
                 For automated testing, I used GameDriver and Cypress, contributing to the application's quality and efficiency.`,
         img: "/images/maloka.jpg",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Unity","C#", "Javascript", "Docker", "Jira", "Jenkins", "Confluence"],
         link: "https://www.playmaloka.com/about",
     },
     {
@@ -74,7 +75,7 @@ const projects = [
             Our collaboration resulted in a successful solution that significantly improved user experience and garnered 
             recognition from TELUS executives and coverage in a University of Calgary publication.`,
         img: "/images/Telus.png",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["Python", "Javascript", "Node.js", "Flask", "Junit 5", "Linux", "Selenium"],
         link: "https://schulich.ucalgary.ca/news/schulich-capstone-team-impresses-industry-partner-mobile-network-solution",
     },
     {
@@ -88,7 +89,7 @@ const projects = [
             However, this difference disappears when they shorten at the same relative speed, suggesting 
             it's due to their unique force-velocity relationships rather than intrinsic differences.`,
         img: "/images/research.png",
-        techImg: ["C#", "Unity", "Postman", "PostgreSQL"],
+        techImg: ["C++", "Linux", "MATLAB", "Git"],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0021929015003127",
     },
 ];

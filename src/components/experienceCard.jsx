@@ -15,6 +15,7 @@ const techIcons = {
     "Framer Motion": "/images/techIcons/framer-motion.png",
     "Git": "/images/techIcons/git.png",
     "GitHub Actions": "/images/techIcons/github-actions.png",
+    "Houdini": "/images/techIcons/houdini.png",
     "Java": "/images/techIcons/java.png",
     "Javascript": "/images/techIcons/javascript.png",
     "Jenkins": "/images/techIcons/jenkins.png",
@@ -25,6 +26,8 @@ const techIcons = {
     "MATLAB": "/images/techIcons/matlab.png",
     "Next.js": "/images/techIcons/nextjs.png",
     "Node.js": "/images/techIcons/nodejs.png",
+    "Parsec": "/images/techIcons/parsec.png",
+    "Perforce": "/images/techIcons/perforce.png",
     "Playwright": "/images/techIcons/playwright.png",
     "PostgreSQL": "/images/techIcons/postgresql.png",
     "Postman": "/images/techIcons/postman.png",
@@ -88,7 +91,7 @@ function ExperienceCard({ project }) {
             <Link className="rel=noopener noreferrer" target="_blank" href={project.link}>
                 <button
                     className="p-4 rounded bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec] text-lg font-semibold w-fit ring-1 ring-black">
-                    See Results
+                    More Info
                 </button>
             </Link>
         </article>
