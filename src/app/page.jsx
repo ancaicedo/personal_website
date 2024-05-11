@@ -7,7 +7,7 @@ const Homepage = () => {
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}> 
     <div className="h-full flex flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll">
       {/* Image Container */}
-      {/* TODO: need to figure out the bug that happens with spaller screens. the image overlaps the content container */}
+      {/* TODO: need to figure out the bug that happens with smaller screens. the image overlaps the content container */}
       <div className="h-1/2 relative">
         <Image src="/images/world.png" alt="hero image" fill className="object-contain md:animate-breathe" />
       </div>
