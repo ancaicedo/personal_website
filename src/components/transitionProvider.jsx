@@ -17,7 +17,7 @@ const TransitionProvider = ({children}) => {
     
   return (
     <AnimatePresence mode="wait">
-        <div key={pathName} className="h-screen w-screen overflow-auto bg-gradient-to-b from-[#121c33] to-[#1f2b3b]">
+        <div key={pathName} className="h-screen w-screen overflow-auto scrollbar scrollbar-track-[#0f172a] scrollbar-w-3 scrollbar-thumb-[#9cb9ec] scrollbar-thumb-rounded-full scrollbar-track-rounded-full bg-gradient-to-b from-[#121c33] to-[#1f2b3b]">
             <motion.div 
             className="h-screen w-screen fixed bg-[#121c33] rounded-b-[100px] z-40"
             animate={{height: "0vh"}}

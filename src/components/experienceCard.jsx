@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-// dictionary of tech icon names and src for the images locally stored in the public/images/techIcons folder
+// dictionary of tech icon names and src for the images
 const techIcons = {
     "C#": "/images/techIcons/c-sharp.png",
     "C++": "/images/techIcons/c++.png",
