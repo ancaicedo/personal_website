@@ -38,7 +38,7 @@ const AboutPage = () => {
           />
           {/* Quote */}
           <div>
-            <span className="italic">"It always seems impossible until it's done."</span><br/>
+            <span className="italic">&quot;It always seems impossible until it`s done.&quot;</span><br/>
             <span>-Nelson Mandela</span>
           </div>
           {/* Biography */}
@@ -53,10 +53,10 @@ const AboutPage = () => {
             Despite my dedication to research, I felt a calling for a different path. With my partner by my side, we ventured abroad and taught English from 2016 to 2017, a transformative experience that broadened my horizons.
           </p>
           <p className="text-lg">
-            Upon returning and with encouragement from my family, I decided to pivot towards a Software Engineering career, a field that had always intrigued me. I began my transition by working as a specialized support technician at the University of Calgary's IT department, where I immersed myself in the world of technology while pursuing my full-time studies in software engineering.
+            Upon returning and with encouragement from my family, I decided to pivot towards a Software Engineering career, a field that had always intrigued me. I began my transition by working as a specialized support technician at the University of Calgary`s IT department, where I immersed myself in the world of technology while pursuing my full-time studies in software engineering.
           </p>
           <p className="text-lg">
-            My tenure at the University's IT department spanned from 2019 to 2022, during which I honed my skills and prepared for the next phase of my career. In 2022, I seized the opportunity to intern at Unity Technologies, a decision that solidified my passion for software development.
+            My tenure at the University`s IT department spanned from 2019 to 2022, during which I honed my skills and prepared for the next phase of my career. In 2022, I seized the opportunity to intern at Unity Technologies, a decision that solidified my passion for software development.
           </p>
           <p className="text-lg">
             Following my internship, I was thrilled to join Unity full time as a Software Development Engineer in Test (SDET) in the Industry & Digital Twin department. I am dedicated to learning, always eager to collaborate, and known for my strong work ethic.

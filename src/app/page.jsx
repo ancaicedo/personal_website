@@ -23,9 +23,9 @@ const Homepage = () => {
 
         {/* Description */}
         <p className="md:text-xl text-[#9cb9ec] text-opacity-90 text-left">
-          Hi my name's Andres Caicedo! I'm a Software Engineer from Colombia, based in Canada.
+          Hi my name`s Andres Caicedo! I`m a Software Engineer from Colombia, based in Canada.
           With a strong foundation in software development and a love for system optimization,
-          I've worked for over three years to improve software functionality and streamline processes.
+          I`ve worked for over three years to improve software functionality and streamline processes.
           My technical skills cover a wide range of computer languages, including C#, C/C++, 
           Python, Javascript and Java. I excel at developing new solutions that improve efficiency 
           and performance. 
