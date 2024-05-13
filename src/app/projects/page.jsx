@@ -1,6 +1,7 @@
 "use client"
 import {motion} from "framer-motion";
 
+
 import ExperienceCard from "@/components/experienceCard";
 
 const projects = [
@@ -100,7 +101,7 @@ const ProjectsPage = () => {
             initial={{y:"-200vh"}}
             animate={{y:"0%"}}
             transition={{duration:1}}
-            className="flex relative h-auto flex-col md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+            className="flex relative h-auto flex-col md:flex-row max-w-full px-1 md:px-10 justify-evenly mx-auto items-center"
         >
             <div className={"h-auto w-full flex space-x-10 overflow-x-scroll p-1 snap-x snap-mandatory projects-page scrollbar scrollbar-track-[#0f172a] scrollbar-w-3 scrollbar-thumb-[#9cb9ec] scrollbar-thumb-rounded-full scrollbar-track-rounded-full"}>
                 {projects.map((project) => (   
