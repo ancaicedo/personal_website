@@ -19,9 +19,6 @@ const ContactPage = () => {
   }, []);
 
   const sendEmail = (e) => {
-    console.log("Service ID: ", process.env.NEXT_PUBLIC_SERVICE_ID);
-    console.log("Template ID: ", process.env.NEXT_PUBLIC_TEMPLATE_ID);
-    console.log("Public Key: ", process.env.NEXT_PUBLIC_PUBLIC_KEY);
     e.preventDefault();
     setError(false);
     setSuccess(false);
