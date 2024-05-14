@@ -62,8 +62,7 @@ const AboutPage = () => {
             Following my internship, I was thrilled to join Unity full time as a Software Development Engineer in Test (SDET) in the Industry & Digital Twin department. I am dedicated to learning, always eager to collaborate, and known for my strong work ethic.
           </p>
           <p className="text-lg">
-            Outside of work, I enjoy exploring new restaurants, spending time with my cats, and enjoying shows with my wife. I also have a deep appreciation for sports, particularly soccer, hockey, and basketball, both as a player and a spectator.
-          </p>
+            Outside of work, I love to travel and explore new cultures. Whenever possible, I embark on adventures to broaden my horizons. I have been fortunate to visit 29 countries so far, with Saint Petersburg, Beijing, and Barcelona standing out as some of my favorite cities to explore. In addition to traveling, I enjoy discovering new restaurants, spending quality time with my cats, and watching shows with my wife. Sports, particularly soccer, hockey, and basketball, are also a significant passion of mine, both as a player and a spectator          </p>
           {/* Signature */ }
           <div className="self-end">
             <svg width="250" height="100" viewBox="0 0 839 460" fill="none" xmlns="http://www.w3.org/2000/svg">

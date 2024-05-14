@@ -77,14 +77,14 @@ const ContactPage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col justify-evenly gap-y-20s overflow-hidden">
-          <div className="flex justify-center lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
+        <div className="h-1/4 lg:h-full lg:w-1/2 flex flex-col justify-evenly overflow-hidden">
+          <div className="flex lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
             <GreetingAnimation delay={randomDelay()}/>
           </div>
           <div className="flex justify-center lg:justify-end" style={{padding: '0 calc(5vw + 10px)'}}>
             <GreetingAnimation delay={randomDelay()}/>
           </div>
-          <div className="flex justify-center lg:justify-start" style={{padding: '0 calc(5vw + 10px)'}}>
+          <div className="lg:flex justify-start hidden" style={{padding: '0 calc(5vw + 10px)'}}>
             <GreetingAnimation delay={randomDelay()}/>
           </div>
           <div className="lg:flex justify-end hidden" style={{padding: '0 calc(5vw + 10px)'}}>
@@ -122,8 +122,15 @@ const ContactPage = () => {
         <form
             onSubmit={sendEmail}
             ref={form}
-            className="h-1/2 lg:h-full lg:w-1/2 text-opacity-90 text-lg flex flex-col space-y-2 w-fit mx-auto justify-center"
+            className="h-3/4 lg:h-full lg:w-1/2 text-opacity-90 text-lg flex flex-col space-y-2 w-fit mx-auto justify-center"
         >
+          <div className="text-left text-[#9cb9ec] text-opacity-90 mb-5 text-lg">
+            <ul>
+              <li>Greetings from all over the world, I would love to hear from you!</li>
+              <li><span className="font-semibold">Phone number:</span> <a href="tel:+18254885719" className="underline">+1 825-488-5719</a></li>
+              <li><span className="font-semibold">Email:</span> <a href="mailto:and.caicedo@outlook.com" className="underline">and.caicedo@outlook.com</a></li>
+            </ul>
+          </div>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 justify-center">
             <input placeholder="Name" className="contact-input placeholder:text-gray-500 md:w-1/2" name="name"
                    type="text"/>
@@ -132,8 +139,8 @@ const ContactPage = () => {
           </div>
           <input placeholder="Subject" className="flex justify-center contact-input placeholder:text-gray-500"
                  name="subject" type="text"/>
-          <textarea 
-              placeholder="Message" 
+          <textarea
+              placeholder="Message"
               className=" contact-input placeholder:text-gray-500 lg:h-72 h-64 overflow-auto max-h-[900px] z-10"
               name="message"
               ref={textareaRef}
