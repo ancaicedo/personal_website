@@ -146,7 +146,8 @@ const ContactPage = () => {
               ref={textareaRef}
           ></textarea>
           <button
-              className="p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">Submit
+              className="p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]">
+            Send email
           </button>
           {success && (
               <span className="text-green-600 font-semibold">
