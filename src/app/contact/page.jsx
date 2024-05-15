@@ -9,7 +9,7 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [formIncomplete, setFormIncomplete] = useState(false);
-  const randomDelay = () => Math.random() * 2 + 8;
+  const randomDelay = () => Math.random() * 2 + 5; // Random delay between 5 and 7 seconds
   const form = useRef();
   const textareaRef = useRef();
 
