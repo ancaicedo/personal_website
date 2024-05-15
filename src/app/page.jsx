@@ -22,12 +22,12 @@ const Homepage = () => {
         </h1>
 
         {/* Description */}
-        <p className="md:text-xl text-[#9cb9ec] text-opacity-90 text-left">
-          Hi my name is Andres Caicedo! I&apos;m a Software Engineer from Canada
+        <p className="md:text-2xl text-[#9cb9ec] text-opacity-90 text-left">
+          Hi my name is <strong>Andres Caicedo!</strong> I&apos;m a Software Engineer from Canada
           with a strong foundation in software development and a love for system optimization.
-          I`ve worked for over five years to improve software functionality and streamline processes.
-          My technical skills cover a wide range of computer languages and technical skills, including C#, C++, 
-          Python, Javascript, Java as well as Linux Administration, Database management. I excel at developing new solutions that improve efficiency 
+          I`ve worked for <strong>over five years</strong> to improve software functionality and streamline processes.
+          My technical skills cover a wide range of computer languages and technical skills, including <strong>C#, C++, 
+          Python, Javascript, Java as well as Linux Administration, Database management.</strong> I excel at developing new solutions that improve efficiency 
           and performance. I have a passion for travelling and learning new cultures. Lets connect and talk about exciting projects!
         </p>
 
