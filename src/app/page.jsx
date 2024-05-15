@@ -26,9 +26,9 @@ const Homepage = () => {
           Hi my name is Andres Caicedo! I&apos;m a Software Engineer from Canada
           with a strong foundation in software development and a love for system optimization.
           I`ve worked for over five years to improve software functionality and streamline processes.
-          My technical skills cover a wide range of computer languages and technical skills, including C#, C/C++, 
-          Python, Javascript and Java. I excel at developing new solutions that improve efficiency 
-          and performance. 
+          My technical skills cover a wide range of computer languages and technical skills, including C#, C++, 
+          Python, Javascript, Java as well as Linux Administration, Database management. I excel at developing new solutions that improve efficiency 
+          and performance. I have a passion for travelling and learning new cultures. Lets connect and talk about exciting projects!
         </p>
 
         {/* Buttons */}
@@ -37,21 +37,22 @@ const Homepage = () => {
               className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec]"
               onClick={() => window.location.href = '/projects'}
           >
-            View My Work
+            My Work
           </button>
+          <a href="/AndresC_Resume.pdf" download="Andres_Caicedo_Resume">
+            <button
+                className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]"
+            >
+              My Resume
+            </button>
+          </a>
           <button
-              className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]"
+              className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec]"
               onClick={() => window.location.href = '/contact'}
           >
             Contact me!
           </button>
-          <a href="/AndresC_Resume.pdf" download="Andres_Caicedo_Resume">
-            <button
-                className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#293444] text-[#9cb9ec] text-opacity-90 hover:bg-[#293444] hover:bg-opacity-60 hover:text-[#9cb9ec]"
-            >
-              Get my Resume
-            </button>
-          </a>
+
         </div>
       </div>
     </div>
