@@ -42,7 +42,7 @@ const AboutPage = () => {
             <span>-Nelson Mandela</span>
           </div>
           {/* Biography */}
-          <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+          <h1 className="font-bold text-2xl">ANDRES CAICEDO</h1>
           <p className="text-lg">
             I embarked on my professional journey by pursuing a degree in biomechanics, which I completed in 2014. During my final year, I had the privilege of conducting my clinical practicum at Mosaic Health Care Network, gaining invaluable hands-on experience.
           </p>
