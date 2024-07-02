@@ -17,7 +17,7 @@ const techIcons = {
     "GitHub Actions": "/images/techIcons/github-actions.png",
     "Houdini": "/images/techIcons/houdini.png",
     "Java": "/images/techIcons/java.png",
-    "Javascript": "/images/techIcons/javascript.png",
+    "JavaScript": "/images/techIcons/javascript.png",
     "Jenkins": "/images/techIcons/jenkins.png",
     "Jira": "/images/techIcons/jira.png",
     "Junit 5": "/images/techIcons/junit.png",
@@ -34,8 +34,10 @@ const techIcons = {
     "Python": "/images/techIcons/python.png",
     "React": "/images/techIcons/react.png",
     "Selenium": "/images/techIcons/selenium.png",
+    "Tailwind CSS": "/images/techIcons/tailwindcss.png",
     "Typescript": "/images/techIcons/typescript.png",
     "Unity": "/images/techIcons/unity.png",
+    "Vercel": "/images/techIcons/vercel.png",
 }
 
 function Tooltip({ children, text }) {

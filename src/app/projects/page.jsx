@@ -6,6 +6,18 @@ import ExperienceCard from "@/components/experienceCard";
 
 const projects = [
     {
+        id: 0,
+        color: "from-[#1f2b3b] to-[#121c33]",
+        title: "Personal Portfolio Web App",
+        desc: `A personal portfolio web application showcasing my work and experience. 
+                I developed this app using Next.js, Tailwind CSS, Framer Motion and Vercel to deploy. 
+                The app features a responsive design, smooth animations, and a dynamic layout. 
+                I used the latest web technologies to create a modern and engaging user experience.`,
+        img: "/images/website.png",
+        techImg: ["JavaScript","Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
+        link: "https://andres-caicedo.com/",
+    },
+    {
         id: 1, 
         color: "from-[#1f2b3b] to-[#121c33]",
         title: "Queso Automation Framework",
@@ -64,7 +76,7 @@ const projects = [
                 Unlike previous projects, I was also involved in the CI/CD pipeline, ensuring smooth deployment and integration processes. 
                 For automated testing, I used GameDriver and Cypress, contributing to the application's quality and efficiency.`,
         img: "/images/maloka.jpg",
-        techImg: ["Unity","C#", "Javascript", "Docker", "Jira", "Jenkins", "Confluence"],
+        techImg: ["Unity","C#", "JavaScript", "Docker", "Jira", "Jenkins", "Confluence"],
         link: "https://www.playmaloka.com/about",
     },
     {
@@ -76,7 +88,7 @@ const projects = [
             Our collaboration resulted in a successful solution that significantly improved user experience and garnered 
             recognition from TELUS executives and coverage in a University of Calgary publication.`,
         img: "/images/Telus.png",
-        techImg: ["Python", "Javascript", "Node.js", "Flask", "Junit 5", "Linux", "Selenium"],
+        techImg: ["Python", "JavaScript", "Node.js", "Flask", "Junit 5", "Linux", "Selenium"],
         link: "https://schulich.ucalgary.ca/news/schulich-capstone-team-impresses-industry-partner-mobile-network-solution",
     },
     {

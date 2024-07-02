@@ -39,7 +39,7 @@ const Homepage = () => {
           >
             My Work
           </button>
-          <a href="/AndresC_Resume.pdf" download="Andres_Caicedo_Resume">
+          <a href="/Andres%20Caicedo%20Main.pdf" download="Andres_Caicedo_Resume">
             <button
                 className="text-sm md:text-lg p-4 rounded-lg ring-1 ring-black bg-[#9cb9ec] text-[#0f172a] hover:bg-[#9cb9ec] hover:bg-opacity-60 hover:text-[#0f172a]"
             >
